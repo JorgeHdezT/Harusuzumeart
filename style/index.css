@@ -1,3 +1,50 @@
-h1 {
-  color: red;
+:root {
+  --mainDark: #8E78DE; /*? Oscuro*/
+  --mainSoft: #CAADFF; /*? Claro*/
+  
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: var(--mainSoft);
+}
+
+#logo {
+  width: 100px;
+  border-radius: 100%;
+}
+
+header {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  background-color: var(--mainDark);
+  flex-direction: column;
+  gap: 10px;  
+
+  & nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+marquee {
+  padding: 5px;
+ background-color: rgba(0, 0, 0, 0.31);
+ color: black;
 }

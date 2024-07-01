@@ -1,0 +1,19 @@
+:root {
+  --mainDark: #8E78DE; /*? Oscuro*/
+  --mainSoft: #CAADFF; /*? Claro*/
+  
+}
+
+#logo {
+  width: 10%;
+  border-radius: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  background-color: var(--mainDark);
+}
