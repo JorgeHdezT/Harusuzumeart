@@ -14,18 +14,80 @@
 <body>
   <header>
     <img src="media/pictures/logo.png" alt="logo harusuzumeart" id="logo">
-    <nav>
-      <a href="">Inicio</a>
-      |
-      <a href="">Ofertas</a>
-      |
-      <a href="">Stickers</a>
-      |
-      <a href="">Prints</a>
-      |
-      <a href="">Camisetas</a>
-      |
-      <a href="">Sobre Mí</a>
+    <h1>Harusuzumeart's Store</h1>
+    <!-- navegacion de escritorio -->
+    <nav class="navbar navbar-expand-lg bg-transparent nav-pc">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stickers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Llaveros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Imanes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Totebags</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otros
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item" href="#">Sobre Mí</a></li>
+                <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navegacion movil -->
+    <nav class="navbar navbar-dark bg-transparent nav-movil">
+      <div class="container-fluid bg-transparent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Harusuzumeart's Store</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stickers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Llaveros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Imanes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Totebags</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otros
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Sobre Mí</a></li>
+                  <li><a class="dropdown-item" href="#">Redes Sociales</a></li>
+                </ul>
+              </li>
+
+              <img src="media/pictures/logo.png" alt="logo harusuzumeart" id="logo-nav">
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   
@@ -91,8 +153,9 @@
     </div>
 
   </section>
+  
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-4 border-top">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 mt-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
