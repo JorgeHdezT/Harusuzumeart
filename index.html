@@ -10,14 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
-  <script src="scripts/3D_Object.js"></script>
 </head>
 
 
 <body>
   <header>
-    <img src="media/pictures/logo.png" alt="logo harusuzumeart" id="logo">
+    <img src="media/pictures/newLogoWhite.png" alt="logo harusuzumeart" id="logo">
     <h1>Haru Suzume Art Store</h1>
     <!-- navegacion de escritorio -->
     <nav class="navbar navbar-expand-lg bg-transparent nav-pc">
@@ -87,7 +85,7 @@
                 </ul>
               </li>
 
-              <img src="media/pictures/logo.png" alt="logo harusuzumeart" id="logo-nav">
+              <img src="media/pictures/newLogoWhite.png" alt="logo harusuzumeart" id="logo-nav">
             </ul>
           </div>
         </div>
@@ -113,8 +111,8 @@
           <div class="photoContainer">
             <img src="media/pictures/bakugo.png" alt="">
           </div>
-          <p>Katsuki Bakugo HOLO - 4.50€</p>
-          <p>Stickers | My Hero Academia</p>
+          <p>Katsuki Bakugo HOLO <br> 4.50€</p>
+          <!-- <p>Stickers | My Hero Academia</p> -->
         </article>
       </a>
 
@@ -125,8 +123,8 @@
           <div class="photoContainer">
             <img src="media/pictures/deku.png" alt="">
           </div>
-          <p>Izuku Midoriya HOLO - 4.50€</p>
-          <p>Stickers | My Hero Academia</p>
+          <p>Izuku Midoriya HOLO <br> 4.50€</p>
+          <!-- <p>Stickers | My Hero Academia</p> -->
         </article>
       </a>
 
@@ -137,8 +135,8 @@
           <div class="photoContainer">
             <img src="media/pictures/todoroki.png" alt="">
           </div>
-          <p>Shoto Todoroki HOLO - 4.50€</p>
-          <p>Stickers | My Hero Academia</p>
+          <p>Shoto Todoroki HOLO <br> 4.50€</p>
+          <!-- <p>Stickers | My Hero Academia</p> -->
         </article>
       </a>
 
@@ -149,18 +147,49 @@
           <div class="photoContainer">
             <img src="media/pictures/bakugo.png" alt="">
           </div>
-          <p>Katsuki Bakugo HOLO - 4.50€</p>
-          <p>Stickers | My Hero Academia</p>
+          <p>Katsuki Bakugo HOLO <br> 4.50€</p>
+          <!-- <p>Stickers | My Hero Academia</p> -->
         </article>
       </a>
       
     </div>
 
   </section>
-  
-  <!-- Contenedor para el modelo 3D -->
-<div id="3d-model-container" style="width: 100%; height: 500px;"></div>
 
+  <section class="contacto">
+    <h1>¡Ponte en contacto conmigo!</h1>
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112247.10395564752!2d-16.368735320041722!3d28.45779557693386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceccc254171%3A0x43111473d277e52e!2sSanta%20Cruz%20de%20Tenerife!5e0!3m2!1ses!2ses!4v1722707376274!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-7e6a1715-bd5c-4a62-912e-37d82eb6f532" data-elfsight-app-lazy></div>
+    -->
+    <form action="/enviar-formulario" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br><br>
+    
+      <label for="instagram">Instagram:</label>
+      <input type="text" id="instagram" name="instagram">
+      <br><br>
+    
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+      <br><br>
+    
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+      <br><br>
+    
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+      <br><br>
+    
+      <button type="submit">Enviar</button>
+    </form>
+    
+    </div>
+  </section>
+  
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 mt-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -190,13 +219,6 @@
     
     </ul>
   </footer>
-
-  <!-- Contenedor para el modelo 3D -->
-<div id="3d-model-container" style="width: 59%; height: 0px;"></div>
-
-
-  
-  <script src="scripts/3D_Object.js"></script>
 
 </body>
 

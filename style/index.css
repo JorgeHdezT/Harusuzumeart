@@ -13,12 +13,13 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  font-size: 20px;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 #logo {
-  width: 100px;
+  width: 120px;
   border-radius: 100%;
 }
 
@@ -71,7 +72,28 @@ header {
   }
 }
 
+.photoContainer img:hover {
+  animation: holoeffect linear 1s infinite;
+}
+@keyframes holoeffect {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+
+  50% {
+    filter: hue-rotate(180deg);
+
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+
+  }
+}
+
+
 .productContainer {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,11 +121,74 @@ header {
   } 
 }
 
+
 .banner {
   background-image: url("../media/pictures/banner.png");
   background-position: center;
   background-size: contain;
   height: 40vh;
+}
+
+.contacto {
+  margin-top: 50px;
+  & h1 {
+    text-align: center;
+  
+  }
+  & div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    
+  }
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos de formulario */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón de enviar */
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 footer {
@@ -161,13 +246,21 @@ footer {
 
 @media (min-width: 320px) and (max-width: 736px) {
 
+
+  
+ #marqueeEfect {
+  padding-top: 80px;
+ }
+
   header {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
     color: white;
+
 
     & h1 {
       margin: 0 !important;
@@ -200,6 +293,7 @@ footer {
     }
   }
   .productContainer {
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -215,6 +309,8 @@ footer {
       text-decoration: none;
     }
   }
+
+  
 
   
   article {
